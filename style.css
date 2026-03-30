@@ -23,19 +23,15 @@ body {
 }
 
 .left {
-  width: 92%;
+  width: 80%;
   background-image: url(img/bg.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .left img {
-  width: 10%;
+  width: 150px;
   height: auto;
-  position: absolute;
-  top: 90px;
-  left: 60px;
+  margin: 40px;
+  /* /*   */
 }
 
 .right {
@@ -101,37 +97,39 @@ h1 {
 .or::after {
   margin-left: 10px;
 }
+.form div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: 1.2px solid blue;
+}
 
 .form {
   position: relative;
-  width: 350px;
+  width: 345px;
   gap: 22px;
   display: flex;
   margin-bottom: 45px;
   color: #9aa3ad;
   background-color: white;
 }
-.form::before{
-  content:"";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 1.3px;
-  background: #87ace8;
-}
-
-.form input {
-  width: 100px;
+.form div {
+  width: 180px;
   flex: 1;
-  padding: 12px;
+  padding: 0;
   border: 1px solid #f5f3f3;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 38px;
   padding: 2px 10px 20px 5px;
-  font-size: 9px;
-  border-radius: 4px;
+  font-size: 12px;
 }
+
+.form input[type="email"],
+.form input[type="tel"] {
+  border: none;
+  outline: none;
+}
+
 .fb-btn {
   display: flex;
   align-items: center;
@@ -172,10 +170,10 @@ h1 {
   height: 10px;
   object-fit: contain;
 }
-h3{
+h3 {
   margin-bottom: 12px;
 }
-.subtext{
+.subtext {
   margin-bottom: 30px;
   color: #777;
   font-size: 12px;
@@ -184,16 +182,15 @@ h3{
 .radio-group {
   display: flex;
   gap: 43px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   align-items: center;
-  
 }
 
 .radio-group label {
   font-size: 10px;
- }
- 
-.info{
+}
+
+.info {
   color: #dddddd;
   border-color: #999;
   background: #fff;
@@ -210,7 +207,7 @@ h3{
   color: #c2bdbd;
   font-size: 12px;
   border-bottom: 2px solid #ebe7e7;
-  box-shadow:  3px 4px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.08);
   margin-bottom: 40px;
 }
 
@@ -231,9 +228,9 @@ h3{
 }
 
 .create-account {
-  width: 100%;
-  padding: 14px;
-  background: #2f80ed;
+  width: 65%;
+  padding: 10px;
+  background: #599af0;
   border: none;
   color: #fff;
   font-size: 16px;
